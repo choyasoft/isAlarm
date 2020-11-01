@@ -1,4 +1,4 @@
-package com.codility.alarmclock
+package com.ivysoft.isalarm
 
 import android.app.AlarmManager
 import android.app.PendingIntent
@@ -51,14 +51,15 @@ class MainActivity : AppCompatActivity() {
                 else
                     time += time + 1000 * 60 * 60 * 24
             }
-            /* For Repeating Alarm set time intervals as 10000 like below lines */
+            /* Para repetir los intervalos de repeticion de la alarma pon el tiempo a intervalos de
+            *  10000 como en el comentario de abajo: */
             // alarmManager!!.setRepeating(AlarmManager.RTC_WAKEUP, time, 10000, pendingIntent)
 
             alarmManager!!.set(AlarmManager.RTC, time, pendingIntent);
-            Toast.makeText(this, "ALARM ON", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "ALARMA ON", Toast.LENGTH_SHORT).show()
         } else {
             alarmManager!!.cancel(pendingIntent)
-            Toast.makeText(this, "ALARM OFF", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "ALARMA OFF", Toast.LENGTH_SHORT).show()
         }
     }
 }

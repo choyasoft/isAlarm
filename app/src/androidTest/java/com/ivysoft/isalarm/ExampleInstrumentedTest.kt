@@ -1,4 +1,4 @@
-package com.codility.alarmclock
+package com.codility.isalarm
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.codility.alarmclock", appContext.packageName)
+        assertEquals("com.codility.com.ivysoft.com.ivysoft.isalarm", appContext.packageName)
     }
 }

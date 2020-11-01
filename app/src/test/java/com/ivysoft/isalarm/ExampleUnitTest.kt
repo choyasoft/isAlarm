@@ -1,4 +1,4 @@
-package com.codility.alarmclock
+package com.codility.isalarm
 
 import org.junit.Test
 
