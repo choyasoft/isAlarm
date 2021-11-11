@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                 else
                     time += time + 1000 * 60 * 60 * 24
             }
-            /* Para repetir los intervalos de repeticion de la alarma pon el tiempo a intervalos de
+            /* Para repetir los intervalos de repeticion de la alarma poner el tiempo a intervalos de
             *  10000 como en el comentario de abajo: */
             // alarmManager!!.setRepeating(AlarmManager.RTC_WAKEUP, time, 10000, pendingIntent)
 
